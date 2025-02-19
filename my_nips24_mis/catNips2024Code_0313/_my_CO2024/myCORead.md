@@ -1,0 +1,136 @@
+```
+pip install pytz
+pip install matplotlib
+pip install tqdm
+pip install ipykernel
+
+``` 
+
+
+
+``` 20240114 DIFCUSO
+conda remove --name cat --all 
+conda create --name cat python=3.9
+conda activate cat
+pip install torch==1.13.0+cu116 torchvision==0.14.0+cu116 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+pip install torch-geometric==2.3.1
+pip install pytorch-lightning==1.9.5
+pip install wandb
+pip install seaborn
+pip install Cython
+pip install pickle5
+pip install POT
+pip install tsplib95
+
+
+
+
+
+
+
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+pip install torch_geometric
+pip install pytorch-lightning==1.9.5
+pip install wandb
+pip install seaborn
+pip install Cython
+pip install pickle5
+pip install POT
+pip install tsplib95
+
+
+pip install logzero
+pip install dgl
+pip install pydantic
+
+
+>>> cat  install lkh >>> 
+wget http://akira.ruc.dk/~keld/research/LKH-3/LKH-3.0.6.tgz
+tar xvfz LKH-3.0.6.tgz
+cd LKH-3.0.6
+make
+<<<  cat install lkh <<< 
+
+git clone https://github.com/jvkersch/pyconcorde
+cd pyconcorde
+pip install -e .
+
+
+cd difusco/utils/cython_merge
+python setup.py build_ext --inplace
+cd -
+
+```
+在 DIFCUSO/generate_tsp_data.py 文件中，要自己修改  lkh_path = 'XXXX/LKH-3.0.6/LKH'
+
+跑train代码在 DIFCUSO/ 目录下
+
+pip install wandb --upgrade
+wandb login --relogin
+
+
+
+
+>>>error>>>
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+pip install -U click
+
+<<<error<<< 
+
+
+>>>error>>>
+ModuleNotFoundError: No module named 'lkh'
+pip install lkh
+
+<<<error<<< 
+
+pip install umap-learn
+pip install node2vec
+
+
+
+
+file transformation:
+To 46:
+scp -P 20048 -r cat_nips24 worm@210.45.70.46:/remote-home/share/cat_nips24
+
+To 59:
+scp -P 20014 -r cat_nips24 worm@210.45.71.59:/remote-home/share/cat_nips24
+
+To 92
+scp -P 20004 -r cat_nips24 worm@210.45.71.92:/remote-home/share/cat_nips24
+
+
+To 11022:
+scp -P 11022 -r cat_nips24 ustc@202.38.86.149:/home/ustc/cat_nips24
+
+To autodl_66:
+scp -P 11532 -r cat_nips24 root@connect.bjc1.seetacloud.com:/root/autodl-tmp/cat_nips24
+# ssh -p 11532 root@connect.bjc1.seetacloud.com
+
+sudo date --set="2024-04-30 16:45:00"
+
+du -sh cat_nips24/
+
+
+zip -r /autodl-tmp/cat_nips24_mis.zip /autodl-tmp/cat_nips24_mis
+
+wandb sync wandb/dryrun-folder-name
+
+
+
+pip install python-sat[aiger,approxmc,cryptosat,pblib]
+
+
+![SAT data generation](https://github.com/DIMESTeam/DIMES/blob/main/MIS/scripts/solve_intel_dimes_sat.sh)
+![*.cnf](https://www.cs.ubc.ca/~hoos/SATLIB/benchm.html)
+
+
+https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/RND3SAT/uf225-960.tar.gz
+
+
+
+
