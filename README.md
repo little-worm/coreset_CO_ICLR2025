@@ -15,7 +15,7 @@ This repository contains implementations and explanations for using coreset meth
 
 ## Usage
 
-Each folder (`tsp`, `MIS`, `CVRP`) contains its respective implementation along with a detailed `**_README.md`  file explaining its usage, dependencies, and how to run the code.
+Each folder (`my_nips24_tsp`, `my_nips24_mis`, `my_nips24_cvrp`) contains its respective implementation along with a detailed `**_README.md` file explaining its usage, dependencies, and how to run the code.
 
 
 
